@@ -13,10 +13,8 @@
   <script>
     // Function to update the clock
     const updateClock = () => {
-      // Get the current time
       const currentTime = new Date();
 
-      // Format the time into hours, minutes, and seconds
       let hours = currentTime.getHours();
       let minutes = currentTime.getMinutes();
       let seconds = currentTime.getSeconds();
@@ -24,7 +22,7 @@
 
       // Convert hours to 12-hour format
       hours = hours % 12;
-      hours = hours ? hours : 12; // Handle midnight (0 hours)
+      hours = hours ? hours : 12; 
 
       // Add leading zeros to minutes and seconds if less than 10
       minutes = minutes < 10 ? '0' + minutes : minutes;
